@@ -1,15 +1,3 @@
-textarea
-{
-  border:none;
-  margin:0;
-}
-
-body
-{
-  overflow:hidden;
-  padding:0;
-}
-
 .codemirror
 {
   border:1px solid #eee;

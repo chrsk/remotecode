@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	
-	function saveNow() {		
+	function saveNow() {	
+	
+		editor.save();
+		
 		var code = $('#code').val();
 		var data = Base64.encode(code);
 		var url = "./save.php";
