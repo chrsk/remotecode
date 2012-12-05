@@ -1,0 +1,33 @@
+textarea
+{
+  border:none;
+  margin:0;
+}
+
+body
+{
+  overflow:hidden;
+  padding:0;
+}
+
+.codemirror
+{
+  border:1px solid #eee;
+}
+
+.codemirror-scroll
+{
+  height:auto;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+
+.code-container {
+	margin:10px;
+}
+
+.actionbar {
+	background-color:#f1f1f1;
+	padding:10px;
+	margin:10px;
+}

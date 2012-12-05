@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<script data-main="scripts/main.js" src="scripts/require-jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="layout.css" />
+<link rel="stylesheet" type="text/css" href="codemirror.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<body>
+    <div class="hero-unit">
+    <h1>Remote code</h1>
+    <p>Serves your code as a JSON format for your code.</p>
+	<p>Just add <code>/encoded.js</code> to the end of this page.</p>
+</div>
+	<div class="actionbar">
+	<button class="save btn btn-success">Save</button>
+	<button class="clear btn btn-danger">Clear</button>
+</div>
+	
+<div class="code-container">
+	<textarea id="code" name="code">function saveNow() {
+	console.debug("Saved");
+
+	var code = $('#code').val();
+	var data = Base64.encode(code);
+	var url = "./save.php";
+	$.post(url, { data: data}, function(data, textStatus, jqXHR) {
+		alert('message: ' +data);
+	});
+};</textarea>
+</div>
+</body>
+</html>
